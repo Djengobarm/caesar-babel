@@ -8,5 +8,5 @@ input.addEventListener('input', onInputChanged);
 key.addEventListener('change', onInputChanged);
 
 function onInputChanged() {
-  output.value = `"${input.value}" encoded with key ${key.value}`;
+  output.value = `"${caesar(input.value, key.value)}" encoded with key ${key.value}`;
 }
