@@ -1,6 +1,6 @@
-const assert = require('assert');
-const chai = require('chai');
-import { caesar } from '../src/caesar.js';
+import * as assert from 'assert';
+import * as chai from 'chai';
+import { caesar } from '../src/caesar';
 
 describe('caesar', function() {
   it('should convert abc to bcd if key is 1', () => {
