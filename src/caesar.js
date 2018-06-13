@@ -3,6 +3,8 @@ const lastPosition = abc.length - 1;
 
 export function caesar(input, key) {
 
+  key = parseInt(key);
+
   if ( key > lastPosition ) {
     throw new Error('Key is invalid');
   }
@@ -15,7 +17,7 @@ export function caesar(input, key) {
 
     if ( index !== -1 ) {
       // JS is weird, so I had to multiply at least one value to 1 to avoid strings concatenation
-      let offset = index + key*1;
+      let offset = index + key;
 
       if ( offset > lastPosition ) {
         offset = offset - abc.length;
